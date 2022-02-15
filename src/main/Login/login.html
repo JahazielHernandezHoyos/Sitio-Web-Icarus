@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="../../public/stylesheets/Navbar/navbar.css">
+    <link rel="stylesheet" href="../../public/stylesheets/Index/styles.css">
+    <link rel="stylesheet" href="../../public/stylesheets/Login/login.css">
+    <link rel="stylesheet" href="../../public/stylesheets/Footer/footer.css">
+    <link rel="stylesheet" href="../../public/stylesheets/DarkMode/dark.css">
+</head>
+
+<body>
+    <header>
+        <img src="../../public/img/Logo/V_Hosting_Logo.png" alt="">
+        <ul>
+            <li class="logo">
+                <a href="../Index/index.html">VitaHosting</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="../Login/login.html">Login</a></li>
+
+            <!--DarkMode-->
+
+            <div class="bx bx-moon" id="darkmode">
+
+            </div>
+        </ul>
+    </header>
+    <main>
+        <div class="boxx">
+            <div class="inner-boxx">
+                <div class="forms-wrap">
+                    <form action="../Index/index.html" autocomplete="off" class="sign-in-form">
+
+                        <div class="logo">
+                            <img src="../../public/img/Logo/V_Hosting_Logo.png" alt="VitaHosting" />
+
+                        </div>
+                        <h4>VitaHosting</h4>
+
+                        <div class="heading">
+                            <h2>Welcome Back</h2>
+                            <h6>Not registred yet?</h6>
+                            <a href="#" class="toggle">Sign up</a>
+                        </div>
+
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Name</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="password" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Password</label>
+                            </div>
+
+                            <input type="submit" value="Sign In" class="sign-btn" />
+
+                            <p class="text">
+                                Forgotten your password or you login datails?
+                                <a href="forgot.html">Get help</a> signing in
+                            </p>
+                        </div>
+                    </form>
+
+                    <form action="index.html" autocomplete="off" class="sign-up-form">
+                        <div class="logo">
+                            <img src="../../public/img/Logo/V_Hosting_Logo.png" alt="VitaHosting" />
+
+                        </div>
+                        <h4>VitaHosting</h4>
+
+                        <div class="heading">
+                            <h2>Get Started</h2>
+                            <h6>Already have an account?</h6>
+                            <a href="#" class="toggle">Sign in</a>
+                        </div>
+
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Name</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="email" class="input-field" autocomplete="off" required />
+                                <label>Email</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="password" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Password</label>
+                            </div>
+
+                            <input type="submit" value="Sign Up" class="sign-btn" />
+
+                            <p class="text">
+                                By signing up, I agree to the
+                                <a href="#">Terms of Services</a> and
+                                <a href="#">Privacy Policy</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="carousel">
+                    <div class="images-wrapper">
+                        <img src="../../public/img/Page/img2.png" class="image img-1 show" alt="" />
+                        <img src="../../public/img/Page/img3.png" class="image img-2" alt="" />
+                        <img src="../../public/img/Page/img4.png" class="image img-3" alt="" />
+                    </div>
+
+                    <div class="text-slider">
+                        <div class="text-wrap">
+                            <div class="text-group">
+                                <h2> Web Storage</h2>
+                                <h2>DataBase</h2>
+                                <h2>VPS</h2>
+                            </div>
+                        </div>
+
+                        <div class="bullets">
+                            <span class="active" data-value="1"></span>
+                            <span data-value="2"></span>
+                            <span data-value="3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Javascript file -->
+
+
+    <footer class="footerIn">
+        <hr>
+        <div class="group-2">
+            <div class="col-md-6">
+                <small>&copy; 2022 <b>Vita<span id="spanFooter">Hosting</span></b>
+                        - Web Site .</small>
+                <div class="copy-menu">
+                    <a href="#about">About</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--Link js-->
+    <script src="../../public/JavascriptFunctions/hamburguer/navbar.js"></script>
+    <script src="../../public/JavascriptFunctions/darkmode/darkMode.js"></script>
+    <script src="../../public/JavascriptFunctions/login/login.js"></script>
+    <script src="../../public/JavascriptFunctions/buttons/btn.js"></script>
+
+
+</body>
+
+</html>
