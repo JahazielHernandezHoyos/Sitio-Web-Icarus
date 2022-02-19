@@ -2,11 +2,13 @@ import React from 'react'
 
 //componentes
 import Navbar from '../components/Navbar'
+import Carousel from '../components/Carousel'
 
 const Inicio = () => {
   return (
     <>
       <Navbar />
+      <Carousel />
       <div class="container marketing">
       <div class="row">
       <div class="col-lg-4">
