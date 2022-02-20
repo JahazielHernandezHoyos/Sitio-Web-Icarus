@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
       <header class="py-5 mb-auto">
-        <nav class="navbar nav-masthead justify-content-center float-md-end navbar-expand-lg navbar-dark fixed-top bg-dark ">
+        <nav class="navbar nav-masthead justify-content-center float-md-end navbar-expand-lg navbar-dark fixed-top" style={{background: "#0d0d0dda"}} >
           <div class="container-fluid">
             <a class="float-md-start ms-5 navbar-brand" href="/">
               <img
@@ -50,9 +50,9 @@ const Navbar = () => {
                   </a>
                 </li>
               </ul>
-              <a class="btn btn-primary text-white nav-link me-5" href="#contact">
+              <button class="btn btn-primary text-white nav-link me-5 button-text" href="#contact">
                 Contact
-              </a>
+              </button>
             </div>
           </div>
         </nav>

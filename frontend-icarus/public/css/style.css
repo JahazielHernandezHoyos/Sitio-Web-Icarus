@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap');
+
+
+h1 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.568);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.button-text {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.6rem 1.3rem;
+  
+}
+
+.bg-dark{
+  background-color: #0D0D0D;
+}
+
+.btn-primary {
+  color: #f2f2f2;
+  background-color: #b47c14;
+  border-color: #0d0d0d00;
+  border-radius: 0.3rem;
+}
+.btn-primary:hover {
+  color: #f2f2f2;
+  background-color: #75500a;
+  border-color: rgba(255, 255, 255, 0);
+  border-radius: 0.3rem;
+}
+.btn-primary:focus {
+  color: #f2f2f2;
+  background-color: #97670c;
+  border-color: rgba(255, 106, 6, 0);
+}
+
+body {
+  overflow-x: hidden;
+  scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0);
+  border-radius: 0.3rem;
+}
+
+body::-webkit-scrollbar {
+  width: 7px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #0d0d0d00; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff2f; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid rgba(255, 166, 0, 0); /* creates padding around scroll thumb */
+}
