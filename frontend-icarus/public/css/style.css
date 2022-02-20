@@ -6,7 +6,6 @@ h1 {
   font-size: 4rem;
   font-weight: 700;
   color: #fff;
-  text-align: center;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -16,7 +15,6 @@ p {
   font-size: 1.5rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.568);
-  text-align: center;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -34,7 +32,7 @@ a {
 .button-text {
   font-family: 'Maven Pro', sans-serif;
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 700;
   color: #fff;
   text-align: center;
   margin-top: 1rem;
