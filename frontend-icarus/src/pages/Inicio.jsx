@@ -1,6 +1,6 @@
 import React from "react";
 //importar css de la carpeta assets css styles
-import ".../assets/css/styles.css";
+import "../assets/css/style.css";
 
 //componentes
 import Navbar from "../components/Navbar";
@@ -8,9 +8,31 @@ import Navbar from "../components/Navbar";
 const Inicio = () => {
   return (
     <>
-      <div class="bg-dark">
+      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <Navbar />
-        <div class="container marketing">
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1>Cover your page.</h1>
+              <p class="lead">
+                Cover is a one-page template for building simple and beautiful
+                home pages. Download, edit the text, and add your own fullscreen
+                background photo to make it your own.
+              </p>
+              <p class="lead">
+                <p>
+                  <a href="#" class="btn btn-primary my-2">
+                    Main call to action
+                  </a>
+                  <a href="#" class="btn btn-secondary my-2">
+                    Secondary action
+                  </a>
+                </p>
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="mt-5 container marketing">
           <div class="row">
             <div class="col-lg-4">
               <svg
