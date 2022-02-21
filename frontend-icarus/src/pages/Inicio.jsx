@@ -5,6 +5,8 @@ import "../components/Gsap";
 import Navbar from "../components/Navbar";
 import Services from "./sections/Services";
 import Gsap from "../components/Gsap";
+import About from "./sections/About";
+import Contact from "./sections/Contact";
 
 const Inicio = () => {
   return (
@@ -39,6 +41,10 @@ const Inicio = () => {
         </section>
 
         <Services />
+
+        <About />
+        
+        <Contact />
       </div>
     </>
   );
