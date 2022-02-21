@@ -9,6 +9,13 @@ const Inicio = () => {
     <>
       <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <Navbar />
+        <section className="banner">
+          <div className="banner-content">
+            <h1 className="text-light">Tecnoacademia del Oriente</h1>
+            <a href="/nosotros">Acerca de nosotros</a>
+          </div>
+        </section>
+
         <section class="text-center container">
           <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
@@ -33,9 +40,7 @@ const Inicio = () => {
           </div>
         </section>
 
-        <Services/>
-        
-
+        <Services />
       </div>
     </>
   );
