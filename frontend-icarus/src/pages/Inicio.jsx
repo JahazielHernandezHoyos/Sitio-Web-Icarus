@@ -1,18 +1,20 @@
 import React from "react";
 
 //componentes
+import "../components/Gsap";
 import Navbar from "../components/Navbar";
 import Services from "./sections/Services";
+import Gsap from "../components/Gsap";
 
 const Inicio = () => {
   return (
     <>
       <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <Navbar />
-
         <section class="text-center container">
           <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 mx-auto">
+            <div class="containerGsap col-lg-6 col-md-8 mx-auto">
+              <div class="headerGsap">
               <h1>
                 Icarus <h1 style={{ color: "#f2d027" }}>Solutions</h1>
               </h1>
@@ -30,6 +32,8 @@ const Inicio = () => {
                   View on Github
                 </button>
               </p>
+              </div>
+
             </div>
           </div>
         </section>
