@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <>
       <Gsap />
-
+      <h1 class="text-center mt-5 py-3">Services</h1>
       <div class="container col-xxl-8 px-4 py-5 ">
         <div class="servicio1 row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
