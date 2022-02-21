@@ -12,6 +12,7 @@ import Footer from "../components/Footer";
 const Inicio = () => {
   return (
     <>
+    <Gsap/>
       <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <Navbar />
         <section class="text-center container">
