@@ -1,35 +1,93 @@
 const About = () => {
   return (
     <>
-      <h1 class="text-center mt-5 py-3">About</h1>
-      <div class="container col-xxl-8 px-4 py-5 ">
-        <div class="servicio1 row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img
-              src="https://cdn.pixabay.com/photo/2017/03/17/06/27/seo-2151033_960_720.png"
-              class="d-block mx-lg-auto img-fluid imagenGsap"
-              width="700"
-              height="500"
-              loading="lazy"
-            />
-          </div>
-          <div class="containerGsap col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Design responsive</h1>
-            <p class="lead py-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-              alias quidem tenetur accusamus aut quod fugiat id est dolorum,
-              recusandae reiciendis fuga iusto numquam tempore eos
-              necessitatibus at nam consectetur.
-            </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button
-                type="button"
-                class="btn btn-outline-secondary btn-lg px-4"
-              >
-                Hire
-              </button>
-            </div>
-          </div>
+      <h1 class="text-center m-5 py-3">About</h1>
+      <div class="col-xxl-12 px-4 py-5 row">
+        <div class="text-center col-lg-4">
+          <svg
+            class="bd-placeholder-img rounded-circle"
+            width="140"
+            height="140"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 140x140"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777"></rect>
+            <text x="50%" y="50%" fill="#777" dy=".3em">
+              140x140
+            </text>
+          </svg>
+
+          <h2>Titulo</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. quos, commodi nobis neque error dolore nam vero, vel similique suscipit.
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="#">
+              View details »
+            </a>
+          </p>
+        </div>
+
+        <div class="text-center col-lg-4">
+          <svg
+            class="bd-placeholder-img rounded-circle"
+            width="140"
+            height="140"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 140x140"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777"></rect>
+            <text x="50%" y="50%" fill="#777" dy=".3em">
+              140x140
+            </text>
+          </svg>
+
+          <h2>Titulo</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. quos, commodi nobis neque error dolore nam vero, vel similique suscipit.
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="#">
+              View details »
+            </a>
+          </p>
+        </div>
+
+        <div class="text-center col-lg-4">
+          <svg
+            class="bd-placeholder-img rounded-circle"
+            width="140"
+            height="140"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 140x140"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777"></rect>
+            <text x="50%" y="50%" fill="#777" dy=".3em">
+              140x140
+            </text>
+          </svg>
+
+          <h2>Titulo</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. quos, commodi nobis neque error dolore nam vero, vel similique suscipit.
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="#">
+              View details »
+            </a>
+          </p>
         </div>
       </div>
     </>
