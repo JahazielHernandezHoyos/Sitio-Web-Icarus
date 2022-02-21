@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <>
-      <h1 class="text-center m-5 py-3">About</h1>
+      <h1 id="About" class="text-center m-5 py-3">About</h1>
       <div class="col-xxl-12 px-4 py-5 row">
         <div class="text-center col-lg-4">
           <svg

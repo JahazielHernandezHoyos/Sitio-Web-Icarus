@@ -7,6 +7,7 @@ import Services from "./sections/Services";
 import Gsap from "../components/Gsap";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
+import Footer from "../components/Footer";
 
 const Inicio = () => {
   return (
@@ -27,9 +28,9 @@ const Inicio = () => {
                 odio. Tempore consequuntur iure totam error.
               </p>
               <p class="lead">
-                <button href="#" class="me-3 btn btn-primary button-text">
+                <a href="#Contact" class="me-3 btn btn-primary button-text">
                   Contact
-                </button>
+                </a>
                 <button href="#" class="ms-3 btn btn-secondary button-text">
                   View on Github
                 </button>
@@ -46,6 +47,7 @@ const Inicio = () => {
         
         <Contact />
       </div>
+      <Footer />
     </>
   );
 };
