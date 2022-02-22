@@ -35,6 +35,9 @@ const Contact = () => {
               <button class="w-100 btn btn-lg btn-primary" type="submit">
                 Submit
               </button>
+              <a class="lead w-100 mt-2 btn btn-lg btn-success" type="button" href="https://api.whatsapp.com/send/?phone=+17073165463">
+                Contact WhatsApp
+              </a>
             </form>
           </div>
         </div>

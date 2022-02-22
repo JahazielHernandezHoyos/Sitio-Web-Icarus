@@ -4,7 +4,7 @@ const Footer = () => {
       <p class="float-end">
       </p>
       <p class="lead">
-        © 2022 Icarus Solutions. · <a>+1 (707) 316-5463</a>
+        © 2022 Icarus Solutions. All rights reserved.
         {/* <a href="#">Privacy</a> ·{" "}
         <a href="#">Terms</a> */}
       </p>

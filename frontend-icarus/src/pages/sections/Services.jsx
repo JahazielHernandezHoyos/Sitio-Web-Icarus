@@ -1,4 +1,6 @@
 import Gsap from "../../components/Gsap";
+import monitor from "../../assets/img/monitor.svg";
+import globe from "../../assets/img/globe.svg";
 
 const Services = () => {
   return (
@@ -11,7 +13,7 @@ const Services = () => {
         <div class="servicio1 row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
             <img
-              src="https://cdn.pixabay.com/photo/2017/03/17/06/27/seo-2151033_960_720.png"
+              src={globe}
               class="d-block mx-lg-auto img-fluid imagenGsap"
               width="700"
               height="500"
@@ -40,7 +42,7 @@ const Services = () => {
         <div class="servicio2 row flex-lg-row align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
             <img
-              src="https://cdn.pixabay.com/photo/2015/01/21/14/14/apple-606761_960_720.jpg"
+              src={monitor}
               class="d-block mx-lg-auto img-fluid imagenGsap"
               width="700"
               height="500"
