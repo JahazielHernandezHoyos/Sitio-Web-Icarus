@@ -17,7 +17,6 @@ const Gsap = () => {
         trigger: ".headerGsap",
         start: "top center+=100",
         toggleActions: "play none none reverse",
-        markers: true,
       },
     }
   );
@@ -35,7 +34,6 @@ const Gsap = () => {
         trigger: ".servicio1",
         start: "top center+=100",
         toggleActions: "play none none reverse",
-        markers: true,
       },
     }
   );
@@ -53,7 +51,6 @@ const Gsap = () => {
         trigger: ".servicio2",
         start: "top center+=100",
         toggleActions: "play none none reverse",
-        markers: true,
       },
     }
   );
@@ -71,7 +68,6 @@ const Gsap = () => {
         trigger: ".servicio3",
         start: "top center+=100",
         toggleActions: "play none none reverse",
-        markers: true,
       },
     }
   );

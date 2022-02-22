@@ -1,92 +1,97 @@
+import codeimg from "../../assets/img/code.svg";
+import design from "../../assets/img/pen-tool.svg";
+import smartphone from "../../assets/img/smartphone.svg";
+
 const About = () => {
   return (
     <>
-      <h1 id="About" class="text-center m-5 py-3">About</h1>
+      <h1 id="About" class="text-center m-5 py-3">
+        About
+      </h1>
+      <p class="p-5 m-5 text-center">
+        We are a software development company that seeks to deliver and give you
+        a space for your online business at a good price and excellent quality
+        offering...
+      </p>
+
       <div class="col-xxl-12 px-4 py-5 row">
-        <div class="text-center col-lg-4">
-          <svg
-            class="bd-placeholder-img rounded-circle"
+        <div class=" p-5 text-center col-lg-4">
+          <img
+            class="m-5 bd-placeholder-img rounded-circle"
             width="140"
             height="140"
-            xmlns="http://www.w3.org/2000/svg"
+            src={design}
             role="img"
             aria-label="Placeholder: 140x140"
             preserveAspectRatio="xMidYMid slice"
             focusable="false"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777"></rect>
-            <text x="50%" y="50%" fill="#777" dy=".3em">
-              140x140
-            </text>
-          </svg>
+          ></img>
 
-          <h2>Titulo</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. quos, commodi nobis neque error dolore nam vero, vel similique suscipit.
+          <h2>Original design and with the content of your brand</h2>
+          <p class="lead">
+            We plan and build from landing pages, home pages, product pages to
+            blogs and any other page that is necessary. In addition, we apply
+            the concept, colors, typography and logo of your brand to your page.
+            If you do not have images or texts we can develop your content.
           </p>
           <p>
-            <a class="btn btn-secondary" href="#">
+            {/* <a class="btn btn-secondary" href="#">
               View details »
-            </a>
+            </a> */}
           </p>
         </div>
 
-        <div class="text-center col-lg-4">
-          <svg
-            class="bd-placeholder-img rounded-circle"
+        <div class=" p-5 text-center col-lg-4">
+          <img
+            class="m-5 bd-placeholder-img rounded-circle"
             width="140"
             height="140"
-            xmlns="http://www.w3.org/2000/svg"
+            src={smartphone}
             role="img"
             aria-label="Placeholder: 140x140"
             preserveAspectRatio="xMidYMid slice"
             focusable="false"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777"></rect>
-            <text x="50%" y="50%" fill="#777" dy=".3em">
-              140x140
-            </text>
-          </svg>
+          ></img>
 
-          <h2>Titulo</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. quos, commodi nobis neque error dolore nam vero, vel similique suscipit.
+          <h2>Tailored to your needs</h2>
+          <p class="lead">
+            The design of a web page depends on the size and objectives of the
+            business. It can be a service page or an online store. The scope of
+            may vary depending on the size, number of services and internal
+            pages, of the functionalities you need such as: animations,
+            calculators, integrations with forms, shopping cart, the limit is
+            the imagination!
           </p>
           <p>
-            <a class="btn btn-secondary" href="#">
+            {/* <a class="btn btn-secondary" href="#">
               View details »
-            </a>
+            </a> */}
           </p>
         </div>
 
-        <div class="text-center col-lg-4">
-          <svg
-            class="bd-placeholder-img rounded-circle"
+        <div class=" p-5 text-center col-lg-4">
+          <img
+            class="m-5 bd-placeholder-img rounded-circle"
             width="140"
             height="140"
-            xmlns="http://www.w3.org/2000/svg"
+            src={codeimg}
             role="img"
             aria-label="Placeholder: 140x140"
             preserveAspectRatio="xMidYMid slice"
             focusable="false"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777"></rect>
-            <text x="50%" y="50%" fill="#777" dy=".3em">
-              140x140
-            </text>
-          </svg>
+          ></img>
 
-          <h2>Titulo</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. quos, commodi nobis neque error dolore nam vero, vel similique suscipit.
+          <h2>Hosting and version upgrades</h2>
+          <p class="lead">
+            Don't worry about hosting your site, we do it for you. Our
+            commitment is to guarantee that you always have your website on the
+            air and with all the updated versions, in terms of content manager
+            and software.
           </p>
           <p>
-            <a class="btn btn-secondary" href="#">
+            {/* <a class="btn btn-secondary" href="#">
               View details »
-            </a>
+            </a> */}
           </p>
         </div>
       </div>

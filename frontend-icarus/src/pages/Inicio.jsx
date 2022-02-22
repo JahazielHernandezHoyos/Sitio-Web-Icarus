@@ -4,7 +4,7 @@ import React from "react";
 import "../components/Gsap";
 import Navbar from "../components/Navbar";
 import Services from "./sections/Services";
-import Gsap from "../components/Gsap";
+import "../components/Gsap";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
 import Footer from "../components/Footer";
@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 const Inicio = () => {
   return (
     <>
-    <Gsap/>
+    
       <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <Navbar />
         <section class="text-center container">
@@ -23,28 +23,28 @@ const Inicio = () => {
                 Icarus <h1 style={{ color: "#f2d027" }}>Solutions</h1>
               </h1>
               <p class="py-5 lead text-sec">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                consectetur ad mollitia doloremque, doloribus pariatur molestias
-                consequatur tempora aliquam quo ipsa deleniti commodi laboriosam
-                odio. Tempore consequuntur iure totam error.
+              Digitization is increasingly present in the life of the entire society. Almost all aspects of our lives can be managed through the computer or our cell phones, through web or mobile applications.
+              <br>
+              </br>
+              Surely you are wondering: And how can I transform my traditional business into a digital one? How can I streamline my company's processes with technology? How can I make my business more efficient?
               </p>
               <p class="lead">
-                <a href="#Contact" class="me-3 btn btn-primary button-text">
-                  Contact
+                <a href="#About" class="me-3 btn btn-primary button-text">
+                  About us
                 </a>
-                <button href="#" class="ms-3 btn btn-secondary button-text">
+                {/* <button href="#" class="ms-3 btn btn-secondary button-text">
                   View on Github
-                </button>
+                </button> */}
               </p>
               </div>
 
             </div>
           </div>
         </section>
+        
+        <About />
 
         <Services />
-
-        <About />
         
         <Contact />
       </div>

@@ -5,11 +5,9 @@ const Contact = () => {
         <div class="row align-items-center g-lg-5 py-5">
           <div class="col-lg-7 text-center text-lg-start">
             <h1 class="display-4 fw-bold lh-1 mb-3 m-5">Contact us</h1>
-            <p class="col-lg-10 fs-4">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate quidem rerum tenetur suscipit debitis quo vero ab, magni
-              nostrum fugiat autem aliquid voluptates cumque aspernatur!
-              Officiis qui temporibus nam assumenda..
+            <p class="col-lg-10 fs-4 text-center">
+              Contact us for your consultation and request your budget without
+              commitments
             </p>
           </div>
           <div class="col-md-10 mx-auto col-lg-5">
