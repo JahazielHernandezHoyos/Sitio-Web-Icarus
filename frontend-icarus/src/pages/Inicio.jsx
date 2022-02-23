@@ -16,10 +16,14 @@ const Inicio = () => {
         <section class="text-center container">
           <div class="row py-lg-5">
             <div class="containerGsap col-lg col-md-8 mx-auto">
+              
               <div class="headerGsap">
-                <h1>
+                <div class="">
+                  <h1>
                   Icarus <h1 style={{ color: "#f2d027" }}>Solutions</h1>
                 </h1>
+                </div>
+                
                 <p class="py-5 lead text-sec">
                   Digitization is increasingly present in the life of the entire
                   society. Almost all aspects of our lives can be managed
