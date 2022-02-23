@@ -4,7 +4,9 @@ const Contact = () => {
       <div id="Contact" class="container col-xl-10 col-xxl-8 px-4 py-5">
         <div class="row align-items-center g-lg-5 py-5">
           <div class="col-lg-7 text-center text-lg-start">
-            <h2 class="display-4 text-center fw-bold lh-1 mb-3 m-5">Contact us</h2>
+            <h3 class="display-4 text-center fw-bold lh-1 mb-5 m-5">
+              Contact us
+            </h3>
             <p class="col-lg fs-4 text-center">
               Contact us for your consultation and request your budget without
               commitments
@@ -35,7 +37,11 @@ const Contact = () => {
               <button class="w-100 btn btn-lg btn-primary" type="submit">
                 Submit
               </button>
-              <a class="lead w-100 mt-2 btn btn-lg btn-success" type="button" href="https://api.whatsapp.com/send/?phone=+17073165463">
+              <a
+                class="lead w-100 mt-2 btn btn-lg btn-success"
+                type="button"
+                href="https://api.whatsapp.com/send/?phone=+17073165463"
+              >
                 Contact WhatsApp
               </a>
             </form>
