@@ -74,7 +74,7 @@ const Services = () => {
             <p class="lead py-5">
               It is the one that is installed on the computer or storage system
               (USB) and we can run it without internet in our operating system
-              in case you need your system to continue working without internet
+              in case you need your system to continue working without internet.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
               <a
