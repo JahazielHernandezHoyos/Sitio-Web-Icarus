@@ -18,7 +18,7 @@ const About = () => {
       </img>About
       </h1>
       
-      <p class="m-3 text-center">
+      <p class="m-5 px-5 text-center">
         We are a software development company that seeks to deliver and give you
         a space for your online business at a good price and excellent quality
         offering...
