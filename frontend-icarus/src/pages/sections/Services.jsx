@@ -1,11 +1,31 @@
-import Gsap from "../../components/Gsap";
 import monitor from "../../assets/img/monitor.svg";
 import globe from "../../assets/img/globe.svg";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
+
+  gsap.fromTo(
+    ".servicio1",
+    {
+      autoAlpha: 0,
+    },
+    {
+      duration: 1,
+      autoAlpha: 1,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".servicio1",
+        start: "top center+=100",
+        toggleActions: "play none none reverse",
+      },
+    }
+  );
+
+
   return (
     <>
-      <Gsap />
       <h1 id="Services" class="text-center mt-5 py-3">
         Services
       </h1>
