@@ -1,7 +1,6 @@
 import React from "react";
 
 //componentes
-import "../components/Gsap";
 import Navbar from "../components/Navbar";
 import Services from "./sections/Services";
 import About from "./sections/About";
