@@ -6,19 +6,19 @@ import info from "../../assets/img/alert-circle.svg"
 const About = () => {
   return (
     <>
-      <h1 id="About" class="text-center m-5 py-3">
-      <img class="bd-placeholder-img rounded-circle"
-            width="70"
-            height="70"
+      <h1 id="About" class="text-center mt-5 py-5">
+        About
+      </h1>
+      <img class="col-auto bd-placeholder-img rounded-circle"
+            width="50"
+            height="50"
             src={info}
             role="img"
             aria-label="Placeholder: 100x100"
             preserveAspectRatio="xMidYMid slice"
             focusable="false">
-      </img>About
-      </h1>
-      
-      <p class="m-5 px-5 text-center">
+      </img>
+      <p class="m-3 mx-5 px-5 text-center">
         We are a software development company that seeks to deliver and give you
         a space for your online business at a good price and excellent quality
         offering...
