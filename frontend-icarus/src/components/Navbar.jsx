@@ -35,17 +35,17 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#About">
+                  <a class="nav-link" href="/#About">
                     About us
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#Services">
+                  <a class="nav-link" href="/#Services">
                     Services
                   </a>
                 </li>
               </ul>
-              <a class="btn btn-primary text-white nav-link me-5 button-text" href="#Contact">
+              <a class="btn btn-primary text-white nav-link me-5 button-text" href="/#Contact">
                 Contact
               </a>
             </div>

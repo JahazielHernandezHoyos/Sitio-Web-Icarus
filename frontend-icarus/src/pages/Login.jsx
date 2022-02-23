@@ -1,5 +1,6 @@
 //componentes
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const login = () => {
   return (
@@ -38,6 +39,7 @@ const login = () => {
         </small>
       </form>
       </div>
+      <Footer/>
     </>
   );
 };
