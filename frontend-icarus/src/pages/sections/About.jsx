@@ -1,17 +1,28 @@
 import codeimg from "../../assets/img/code.svg";
 import design from "../../assets/img/pen-tool.svg";
 import smartphone from "../../assets/img/smartphone.svg";
+import info from "../../assets/img/alert-circle.svg"
 
 const About = () => {
   return (
     <>
       <h1 id="About" class="text-center m-5 py-3">
-        About
+      <img class="bd-placeholder-img rounded-circle"
+            width="70"
+            height="70"
+            src={info}
+            role="img"
+            aria-label="Placeholder: 100x100"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+      </img>About
       </h1>
-      <p class="p-5 m-5 text-center">
+      
+      <p class="m-3 text-center">
         We are a software development company that seeks to deliver and give you
         a space for your online business at a good price and excellent quality
         offering...
+        
       </p>
 
       <div class="col-xxl-12 px-4 py-5 row">
@@ -41,7 +52,7 @@ const About = () => {
           </p>
         </div>
 
-        <div class=" p-5 text-center col-lg-4">
+        <div class="p-5 text-center col-lg-4">
           <img
             class="m-5 bd-placeholder-img rounded-circle"
             width="140"
