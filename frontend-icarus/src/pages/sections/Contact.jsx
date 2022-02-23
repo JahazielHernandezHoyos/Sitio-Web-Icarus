@@ -4,8 +4,8 @@ const Contact = () => {
       <div id="Contact" class="container col-xl-10 col-xxl-8 px-4 py-5">
         <div class="row align-items-center g-lg-5 py-5">
           <div class="col-lg-7 text-center text-lg-start">
-            <h1 class="display-4 fw-bold lh-1 mb-3 m-5">Contact us</h1>
-            <p class="col-lg-10 fs-4 text-center">
+            <h2 class="display-4 text-center fw-bold lh-1 mb-3 m-5">Contact us</h2>
+            <p class="col-lg fs-4 text-center">
               Contact us for your consultation and request your budget without
               commitments
             </p>

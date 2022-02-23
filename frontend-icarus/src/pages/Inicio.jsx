@@ -4,7 +4,6 @@ import React from "react";
 import "../components/Gsap";
 import Navbar from "../components/Navbar";
 import Services from "./sections/Services";
-import "../components/Gsap";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
 import Footer from "../components/Footer";
@@ -12,10 +11,10 @@ import Footer from "../components/Footer";
 const Inicio = () => {
   return (
     <>
-    
       <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <Navbar />
         <section class="text-center container">
+          
           <div class="row py-lg-5">
             <div class="containerGsap col-lg-6 col-md-8 mx-auto">
               <div class="headerGsap">
@@ -47,7 +46,9 @@ const Inicio = () => {
         <Services />
         
         <Contact />
+        
       </div>
+      
       <Footer />
     </>
   );

@@ -1,10 +1,12 @@
 const Footer = () => {
+
+  //pedir año actual para el copyright
+  const year = new Date().getFullYear();
+
   return (
-    <footer class="m-5 text-center container">
-      <p class="float-end">
-      </p>
-      <p class="lead">
-        © 2022 Icarus Solutions. All rights reserved.
+    <footer class="py-5 container">
+      <p class="text-center lead">
+        © {year} Icarus Solutions. All rights reserved.
         {/* <a href="#">Privacy</a> ·{" "}
         <a href="#">Terms</a> */}
       </p>
