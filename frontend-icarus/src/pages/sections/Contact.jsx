@@ -11,7 +11,7 @@ const Contact = () => {
             </h3>
             <p class="col-lg fs-4 text-center">
               Contact us for your consultation and request your budget without
-              commitments
+              commitments.
             </p>
             <img
               class="mx-auto m-3 d-block"
