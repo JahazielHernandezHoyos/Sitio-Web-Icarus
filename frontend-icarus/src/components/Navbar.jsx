@@ -1,11 +1,13 @@
 import React from "react";
 import Logo from "../assets/img/Logo.png";
+import Gsap from "./Gsap"
 
 const Navbar = () => {
+  Gsap();
   return (
     <>
       <header className="py-5 mb-auto">
-        <nav className="navbar nav-masthead justify-content-center float-md-end navbar-expand-lg navbar-dark fixed-top" style={{background: "#0d0d0dda"}} >
+        <nav className="headerGsap navbar nav-masthead justify-content-center float-md-end navbar-expand-lg navbar-dark fixed-top" style={{background: "#0d0d0dda"}} >
           <div className="container-fluid">
             <a className="float-md-start ms-5 navbar-brand" href="/">
               <img

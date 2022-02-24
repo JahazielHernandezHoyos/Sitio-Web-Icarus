@@ -1,7 +1,9 @@
 import logo from "../../assets/img/Logo.png";
 import emailjs from "emailjs-com";
+import Gsap from "../../components/Gsap"
 
 const Contact = () => {
+  Gsap();
   function sendEmail(e) {
     e.preventDefault();
 
@@ -12,7 +14,7 @@ const Contact = () => {
   }
   return (
     <>
-      <div id="Contact" className="container col-xl-10 col-xxl-8 px-4 py-5">
+      <div id="Contact" className="contactAnimate container col-xl-10 col-xxl-8 px-4 py-5">
         <div className="row align-items-center g-lg-5 py-5">
           <div className="col-lg-5 text-center text-lg-start">
             <h3 className="display-4 text-center fw-bold lh-1 mb-5">Contact us</h3>

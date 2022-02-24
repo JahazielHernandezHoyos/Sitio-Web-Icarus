@@ -88,7 +88,6 @@ body::-webkit-scrollbar-thumb {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
   width: 100%;
   background-image: url('https://cdn.pixabay.com/photo/2015/10/27/14/40/programming-1009134_960_720.jpg');
 

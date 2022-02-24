@@ -2,8 +2,10 @@ import codeimg from "../../assets/img/code.svg";
 import design from "../../assets/img/pen-tool.svg";
 import smartphone from "../../assets/img/smartphone.svg";
 import info from "../../assets/img/alert-circle.svg"
+import Gsap from "../../components/Gsap";
 
 const About = () => {
+  Gsap();
   return (
     <>
       <h1 id="About" className="text-center mt-5 py-5">
@@ -27,8 +29,8 @@ const About = () => {
         
       </p>
 
-      <div className="col-xxl-12 px-4 py-5 row">
-        <div className=" p-5 text-center col-lg-4">
+      <div className=" col-xxl-12 px-4 py-5 row">
+        <div className="box1 p-5 text-center col-lg-4">
           <img
             className="m-5 bd-placeholder-img rounded-circle"
             width="140"
@@ -55,7 +57,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="p-5 text-center col-lg-4">
+        <div className="box2 p-5 text-center col-lg-4">
           <img
             className="m-5 bd-placeholder-img rounded-circle"
             width="140"
@@ -84,7 +86,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className=" p-5 text-center col-lg-4">
+        <div className="box3 p-5 text-center col-lg-4">
           <img
             className="m-5 bd-placeholder-img rounded-circle"
             width="140"
