@@ -11,30 +11,29 @@ import users from "../assets/img/users.svg";
 const Inicio = () => {
   return (
     <>
-      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <Navbar />
-        <section class="text-center container">
-          <div class="row py-lg-5">
-            <div class="containerGsap col-lg col-md-8 mx-auto">
-              
-              <div class="headerGsap">
-                <div class="">
-                  <h1>
-                  Icarus <h1 style={{ color: "#f2d027" }}>Solutions</h1>
-                </h1>
-                </div>
-                
-                <p class="py-5 lead text-sec">
-                  Digitization is increasingly present in the life of the entire
-                  society. Almost all aspects of our lives can be managed
-                  through the computer or our cell phones, through web or mobile
-                  applications. Surely you are wondering: And how can I
-                  transform my traditional business into a digital one? How can
-                  I streamline my company's processes with technology? How can I
-                  make my business more efficient?
-                </p>
-                <img
-                    class="text-center col-auto mx-5 bd-placeholder-img rounded-circle"
+      <div>
+        <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+          <Navbar />
+          <section className="text-center container">
+            <div className="row py-lg-5">
+              <div className="containerGsap col-lg col-md-8 mx-auto">
+                <div className="headerGsap">
+                  <div className="">
+                    <h1>Icarus</h1>
+                    <h1 style={{ color: "#f2d027" }}>Solutions</h1>
+                  </div>
+
+                  <p className="py-5 lead text-sec">
+                    Digitization is increasingly present in the life of the
+                    entire society. Almost all aspects of our lives can be
+                    managed through the computer or our cell phones, through web
+                    or mobile applications. Surely you are wondering: And how
+                    can I transform my traditional business into a digital one?
+                    How can I streamline my company's processes with technology?
+                    How can I make my business more efficient?
+                  </p>
+                  <img
+                    className="text-center col-auto mx-5 bd-placeholder-img rounded-circle"
                     width="200"
                     height="200"
                     src={users}
@@ -42,28 +41,33 @@ const Inicio = () => {
                     aria-label="Placeholder: 140x140"
                     preserveAspectRatio="xMidYMid slice"
                     focusable="false"
-                  ></img>
-                <p class="lead">
-                  <a href="#About" class="me-3 btn btn-primary button-text">
-                    About us
-                  </a>
-                  {/* <button href="#" class="ms-3 btn btn-secondary button-text">
+                    alt=""
+                  />
+                  <p className="lead">
+                    <a
+                      href="#About"
+                      className="me-3 btn btn-primary button-text"
+                    >
+                      About us
+                    </a>
+                    {/* <button href="#" className="ms-3 btn btn-secondary button-text">
                   View on Github
                 </button> */}
-                </p>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <About />
+          <About />
 
-        <Services />
+          <Services />
 
-        <Contact />
+          <Contact />
+        </div>
+
+        <Footer />
       </div>
-
-      <Footer />
     </>
   );
 };

@@ -1,55 +1,92 @@
 import logo from "../../assets/img/Logo.png";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_j5635iu", "template_ks7t69l", e.target, "user_n7RfnKQlZUHGXNYthJREV",).then(res => {
+      console.log(res)
+      window.alert("Message sent successfully");
+    }).catch(err=> console.log(err));
+  }
   return (
     <>
-      <div id="Contact" class="container col-xl-10 col-xxl-8 px-4 py-5">
-        <div class="row align-items-center g-lg-5 py-5">
-          <div class="col-lg-7 text-center text-lg-start">
-            <h3 class="display-4 text-center fw-bold lh-1 mb-5">
-              Contact us
-            </h3>
-            <p class="col-lg fs-4 text-center">
+      <div id="Contact" className="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div className="row align-items-center g-lg-5 py-5">
+          <div className="col-lg-5 text-center text-lg-start">
+            <h3 className="display-4 text-center fw-bold lh-1 mb-5">Contact us</h3>
+            <p className="col-lg fs-4 text-center">
               Contact us for your consultation and request your budget without
               commitments.
             </p>
             <img
-              class="mx-auto m-3 d-block"
+              className="mx-auto m-3 d-block"
               width="200"
               height="200"
               src={logo}
               role="img"
               preserveAspectRatio="xMidYMid slice"
               focusable="false"
+              alt=""
             ></img>
           </div>
-          <div class="col-md-10 mx-auto col-lg-5">
-            <form class="bg-dark p-4 p-md-5 border rounded-3 bg-light">
-              <div class="form-floating mb-3">
+          <div className="col-md-10 mx-auto col-lg-7">
+            <form
+              className="bg-dark p-4 p-md-5 border rounded-3 bg-light"
+              onSubmit={sendEmail}
+            >
+              <div className="form-floating mb-3">
                 <input
+                  name="name"
+                  type="text"
+                  className="text-white bg-dark form-control"
+                  id="floatingInput"
+                  placeholder="Name"
+                />
+                <label htmlFor="floatingInput">Name</label>
+              </div>
+              <div className="form-floating mb-3">
+                <input
+                  name="email"
                   type="email"
-                  class="text-white bg-dark form-control"
+                  className="text-white bg-dark form-control"
                   id="floatingInput"
                   placeholder="name@example.com"
                 />
-                <label for="floatingInput">Email address</label>
+                <label htmlFor="floatingInput">Email address</label>
               </div>
-              <div class="form-floating mb-3">
+              <div className="form-floating mb-3">
+                <input
+                  name="Business"
+                  type="text"
+                  className="text-white bg-dark form-control"
+                  id="floatingInput"
+                  placeholder="Business"
+                />
+                <label htmlFor="floatingInput">Business</label>
+              </div>
+              <div className="form-floating mb-3">
                 <textarea
+                  name="Message"
                   style={{ height: "120px" }}
                   type="Message"
-                  class="text-white bg-dark form-control"
+                  className="text-white bg-dark form-control"
                   aria-label="With textarea"
                   id="Message"
                   placeholder="Message"
                 ></textarea>
-                <label for="Message">Message</label>
+                <label htmlFor="Message">Message</label>
               </div>
-              <button class="w-100 btn btn-lg btn-primary" type="submit">
+              <button
+                className="w-100 btn btn-lg btn-primary"
+                type="submit"
+                value="Send"
+              >
                 Submit
               </button>
               <a
-                class="lead w-100 mt-2 btn btn-lg btn-success"
+                className="lead w-100 mt-2 btn btn-lg btn-success"
                 type="button"
                 href="https://api.whatsapp.com/send/?phone=+17073165463"
               >

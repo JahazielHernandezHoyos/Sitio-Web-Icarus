@@ -4,8 +4,8 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer class="py-5 container">
-      <p class="text-center lead">
+    <footer className="py-5 container">
+      <p className="text-center lead">
         © {year} Icarus Solutions. All rights reserved.
         {/* <a href="#">Privacy</a> ·{" "}
         <a href="#">Terms</a> */}
