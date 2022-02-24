@@ -12,12 +12,14 @@ const Inicio = () => {
   return (
     <>
       <div>
-        <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" >
+        
           <Navbar />
-          <section className="text-center container">
-            <div className="row py-lg-5">
-              <div className="containerGsap col-lg col-md-8 mx-auto">
-                <div className="headerGsap">
+          <section className=" text-center container" >
+            <div className="fondo-imagen " >
+            <div style={{backgroundColor: "rgba(54, 0, 29, 0.950)"}} className="row py-lg-5 p-5" >
+              <div className="containerGsap col-lg col-md-8 mx-auto" >
+                <div className="headerGsap" >
                   <div className="">
                     <h1>Icarus</h1>
                     <h1 style={{ color: "#f2d027" }}>Solutions</h1>
@@ -56,6 +58,7 @@ const Inicio = () => {
                   </p>
                 </div>
               </div>
+            </div>
             </div>
           </section>
 

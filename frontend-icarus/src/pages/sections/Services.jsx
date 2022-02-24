@@ -5,8 +5,9 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
+
   gsap.fromTo(
-    ".servicio1",
+    "#servicio1",
     {
       autoAlpha: 0,
     },
@@ -15,7 +16,7 @@ const Services = () => {
       autoAlpha: 1,
       ease: "none",
       scrollTrigger: {
-        trigger: ".servicio1",
+        trigger: "#servicio1",
         start: "top center+=100",
         toggleActions: "play none none reverse",
       },
@@ -28,7 +29,7 @@ const Services = () => {
         Services
       </h1>
       <div className="container col-xxl-8 px-4 py-5 ">
-        <div className="servicio1 row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div id="servicio1" className="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div className="col-10 col-sm-8 col-lg-6">
             <img
               src={globe}

@@ -82,3 +82,17 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px; /* roundness of the scroll thumb */
   border: 3px solid rgba(255, 166, 0, 0); /* creates padding around scroll thumb */
 }
+
+.fondo-imagen {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  width: 100%;
+  background-image: url('https://cdn.pixabay.com/photo/2015/10/27/14/40/programming-1009134_960_720.jpg');
+
+  /* background-color: rgba(1, 20, 43, 0.801);
+  background-image: url('https://cdn.pixabay.com/photo/2021/12/28/11/38/trees-6899050_960_720.jpg');
+   */
+}
