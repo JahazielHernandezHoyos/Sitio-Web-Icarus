@@ -64,12 +64,12 @@ const Gsap = () => {
       ".box1",
       {
         autoAlpha: 0,
-        x: 50,
+        y: 50,
       },
       {
         autoAlpha: 1,
         duration: 5,
-        x: 0,
+        y: 0,
         ease: Power3.easeOut,
         scrollTrigger: {
           trigger: ".box1",
@@ -82,11 +82,11 @@ const Gsap = () => {
       ".box2",
       {
         autoAlpha: 0,
-        y: -50,
+        y: 50,
       },
       {
         autoAlpha: 1,
-        duration: 5,
+        duration: 4,
         y: 0,
         ease: Power3.easeOut,
         scrollTrigger: {
@@ -100,12 +100,12 @@ const Gsap = () => {
       ".box3",
       {
         autoAlpha: 0,
-        x: -50,
+        y: 50,
       },
       {
         autoAlpha: 1,
-        duration: 5,
-        x: 0,
+        duration: 3,
+        y: 0,
         ease: Power3.easeOut,
         scrollTrigger: {
           trigger: ".box3",
@@ -121,12 +121,12 @@ const Gsap = () => {
         ".imgGsap1",
         {
           autoAlpha: 0,
-          x: 500,
+          y: 100,
         },
         {
           autoAlpha: 1,
           duration: 1,
-          x: 0,
+          y: 0,
           ease: Power3.easeOut,
           scrollTrigger: {
             trigger: ".imgGsap1",
@@ -140,12 +140,12 @@ const Gsap = () => {
         ".imgGsap2",
         {
           autoAlpha: 0,
-          x: -500,
+          y: 100,
         },
         {
           autoAlpha: 1,
           duration: 1,
-          x: 0,
+          y: 0,
           ease: Power3.easeOut,
           scrollTrigger: {
             trigger: ".imgGsap2",

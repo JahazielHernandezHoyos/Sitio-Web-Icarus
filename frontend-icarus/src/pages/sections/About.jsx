@@ -29,8 +29,8 @@ const About = () => {
         
       </p>
 
-      <div className=" col-xxl-12 px-4 py-5 row">
-        <div className="box1 p-5 text-center col-lg-4">
+      <div className="box1 col-xxl-12 px-4 py-5 row">
+        <div className=" p-5 text-center col-lg-4">
           <img
             className="m-5 bd-placeholder-img rounded-circle"
             width="140"

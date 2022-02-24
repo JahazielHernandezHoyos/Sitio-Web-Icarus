@@ -6,11 +6,11 @@ const Services = () => {
   Gsap();
   return (
     <>
-      <h1 id="Services" className="text-center mt-5 py-3">
+      <h1 id="Services" className="text-center mt-5">
         Services
       </h1>
-      <div className="container col-xxl-8 px-4 py-5 ">
-        <div className=" row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div className="container col-xxl-8 px-4">
+        <div className=" row flex-lg-row-reverse align-items-center g-5">
           <div className="imgGsap1 col-10 col-sm-8 col-lg-6">
             <img
               src={globe}
