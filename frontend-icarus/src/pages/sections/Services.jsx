@@ -6,7 +6,7 @@ const Services = () => {
   Gsap();
   return (
     <>
-      <h1 id="Services" className="display-5 fw-bold lh-1 text-center mt-5">
+      <h1 id="Services" className="display-5 fw-bold lh-1 text-center mt-5 mb-5">
         Services
       </h1>
       <div className="container col-xxl-8 px-4">
@@ -15,8 +15,8 @@ const Services = () => {
             <img
               src={globe}
               className="d-block mx-lg-auto img-fluid"
-              width="700"
-              height="500"
+              width="300"
+              height="300"
               loading="lazy"
               alt="globe"
             />
@@ -45,8 +45,8 @@ const Services = () => {
             <img
               src={monitor}
               className="imgGsap2 d-block mx-lg-auto img-fluid"
-              width="700"
-              height="500"
+              width="300"
+              height="300"
               loading="lazy"
               alt="monitor"
             />
