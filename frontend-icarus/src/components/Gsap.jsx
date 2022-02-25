@@ -10,13 +10,13 @@ const Gsap = () => {
     gsap.fromTo(
         ".headerGsap",
         {
-          y: -100,
+          y: -50,
           autoAlpha: 0,
         },
         {
           y: 0,
-          duration: 3,
-          autoAlpha: 1,
+          duration: 1,
+          autoAlpha: 3,
           ease: "Expo.easeOut",
           scrollTrigger: {
             trigger: ".headerGsap",

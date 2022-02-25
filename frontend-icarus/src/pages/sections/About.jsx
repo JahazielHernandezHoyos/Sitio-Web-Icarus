@@ -43,7 +43,7 @@ const About = () => {
             alt=""
           ></img>
 
-          <h2>Original design and with the content of your brand</h2>
+          <h4>Original design and with the content of your brand</h4>
           <p className="lead">
             We plan and build from landing pages, home pages, product pages to
             blogs and any other page that is necessary. In addition, we apply
@@ -70,7 +70,7 @@ const About = () => {
             alt=""
           ></img>
 
-          <h2>Tailored to your needs</h2>
+          <h4>Tailored to your needs</h4>
           <p className="lead">
             The design of a web page depends on the size and objectives of the
             business. It can be a service page or an online store. The scope of
@@ -99,7 +99,7 @@ const About = () => {
             alt=""
           ></img>
 
-          <h2>Hosting and version upgrades</h2>
+          <h4>Hosting and version upgrades</h4>
           <p className="lead">
             Don't worry about hosting your site, we do it for you. Our
             commitment is to guarantee that you always have your website on the

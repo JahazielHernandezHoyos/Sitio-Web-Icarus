@@ -14,20 +14,20 @@ const Inicio = () => {
       <div>
         <div className="cover-container d-flex w-100 h-100 mx-auto flex-column">
           <Navbar />
-          <section className=" text-center container">
+          <section className="text-center container">
             <div className="fondo-imagen ">
               <div
                 style={{ backgroundColor: "rgba(54, 0, 29, 0.950)" }}
                 className="row py-lg-5 p-5"
               >
                 <div className="containerGsap col-lg col-md-8 mx-auto">
-                  <div className="headerGsap">
-                    <div className="container text-center">
-                      <h1>Icarus</h1>
-                      <h1 style={{ color: "#f2d027" }}>Solutions</h1>
+                  <div className="">
+                    <div className="headerGsap display-5 fw-bold lh-1 text-center mb-4">
+                      <h1 className="display-2 fw-bold lh-4">Icarus</h1>
+                      <h1 className="display-2 fw-bold lh-4" style={{ color: "#f2d027" }}>Solutions</h1>
                     </div>
 
-                    <p className="lead text-sec text-break">
+                    <p className="headerGsap lead text-sec text-break">
                       Digitization is increasingly present in the life of the
                       entire society. Almost all aspects of our lives can be
                       managed through the computer or our cell phones, through
@@ -37,7 +37,7 @@ const Inicio = () => {
                       technology? How can I make my business more efficient?
                     </p>
                     <img
-                      className="text-center col-auto mx-5 bd-placeholder-img rounded-circle"
+                      className="headerGsap text-center col-auto mx-5 bd-placeholder-img rounded-circle"
                       width="200"
                       height="200"
                       src={users}
@@ -47,7 +47,7 @@ const Inicio = () => {
                       focusable="false"
                       alt=""
                     />
-                    <p className="lead">
+                    <p className="headerGsap lead">
                       <a
                         href="#About"
                         className="me-3 btn btn-primary button-text"

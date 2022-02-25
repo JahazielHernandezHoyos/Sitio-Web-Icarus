@@ -6,7 +6,7 @@ const Services = () => {
   Gsap();
   return (
     <>
-      <h1 id="Services" className="text-center mt-5">
+      <h1 id="Services" className="display-5 fw-bold lh-1 text-center mt-5">
         Services
       </h1>
       <div className="container col-xxl-8 px-4">
@@ -22,7 +22,7 @@ const Services = () => {
             />
           </div>
           <div className="servicio1 containerGsap col-lg-6">
-            <h1 className="display-5 fw-bold lh-1 mb-3">Web development</h1>
+            <h3 className="mb-3">Web development</h3>
             <p className="lead py-5">
               From small and simple pages to large and complex ecommerce.
               Includes host. If you do not have a website, your competition
@@ -52,9 +52,9 @@ const Services = () => {
             />
           </div>
           <div className="servicio2 containerGsap col-lg-6">
-            <h1 className="display-5 fw-bold lh-1 mb-3">
+            <h3 className="mb-3">
               Desktop applications
-            </h1>
+            </h3>
             <p className="lead py-5">
               It is the one that is installed on the computer or storage system
               (USB) and we can run it without internet in our operating system
