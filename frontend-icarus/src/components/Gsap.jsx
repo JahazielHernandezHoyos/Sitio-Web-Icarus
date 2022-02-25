@@ -7,24 +7,24 @@ gsap.registerPlugin(ScrollTrigger);
 const Gsap = () => {
   useEffect(() => {
 
-    gsap.fromTo(
-        ".headerGsap",
-        {
-          y: -50,
-          autoAlpha: 0,
-        },
-        {
-          y: 0,
-          duration: 1,
-          autoAlpha: 3,
-          ease: "Expo.easeOut",
-          scrollTrigger: {
-            trigger: ".headerGsap",
-            start: "top center+=100",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
+    // gsap.to(
+    //     ".headerGsap",
+    //     {
+    //       y: -50,
+    //       autoAlpha: 0,
+    //     },
+    //     {
+    //       y: 0,
+    //       duration: 1,
+    //       autoAlpha: 3,
+    //       ease: "Expo.easeOut",
+    //       scrollTrigger: {
+    //         trigger: ".headerGsap",
+    //         start: "top center+=100",
+    //         toggleActions: "play none none reverse",
+    //       },
+    //     }
+    //   );
 
     gsap.fromTo(
       ".servicio1",
