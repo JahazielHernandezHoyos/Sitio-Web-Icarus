@@ -22,7 +22,7 @@ const About = () => {
             alt="">
               
       </img>
-      <p className="m-3 mx-5 px-5 text-center">
+      <p className="p-5 text-center">
         We are a software development company that seeks to deliver and give you
         a space for your online business at a good price and excellent quality
         offering...
