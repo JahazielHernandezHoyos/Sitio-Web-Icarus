@@ -48,7 +48,7 @@ const Navbar = () => {
                 </li>
               </ul>
 
-              <div class="px-3 dropdown">
+              <div class="navbar-nav mx-2 dropdown">
                 <button
                   class="btn btn-secondary dropdown-toggle"
                   type="button"
@@ -73,11 +73,12 @@ const Navbar = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
-
-              <a className="btn btn-primary text-white nav-link button-text" href="/#Contact">
+                <ul></ul>
+                <a className="btn btn-primary text-white nav-link button-text" href="/#Contact">
                 Contact
               </a>
+              </div>
+              
             </div>
           </div>
         </nav>

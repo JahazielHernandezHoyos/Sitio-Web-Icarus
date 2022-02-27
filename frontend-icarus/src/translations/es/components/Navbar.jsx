@@ -12,7 +12,9 @@ const Navbar = () => {
           style={{ background: "#0d0d0dda" }}
         >
           <div className="container-fluid">
+            
             <a className="float-md-start navbar-brand" href="/">
+
               <img
                 src={Logo}
                 alt="Icarus Logo"
@@ -51,7 +53,7 @@ const Navbar = () => {
                 </li>
               </ul>
 
-              <div class="px-3 dropdown">
+              <div class="navbar-nav mx-2 dropdown">
                 <button
                   class="btn btn-secondary dropdown-toggle"
                   type="button"
@@ -76,13 +78,11 @@ const Navbar = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
-              <a
-                className="btn btn-primary text-white nav-link"
-                href="/#Contact"
-              >
+                <ul></ul>
+                <a className="btn btn-primary text-white nav-link button-text" href="/#Contact">
                 Contactanos
               </a>
+              </div>
             </div>
           </div>
         </nav>
