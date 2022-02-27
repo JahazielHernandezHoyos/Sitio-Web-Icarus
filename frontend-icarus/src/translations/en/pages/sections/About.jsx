@@ -11,17 +11,6 @@ const About = () => {
       <h1 id="About" className="text-center mt-5 py-5">
         About
       </h1>
-      <img className="col-auto bd-placeholder-img rounded-circle"
-            width="50"
-            height="50"
-            src={info}
-            role="img"
-            aria-label="Placeholder: 100x100"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-            alt="">
-              
-      </img>
       <p className="p-5 text-center">
         We are a software development company that seeks to deliver and give you
         a space for your online business at a good price and excellent quality
@@ -29,7 +18,7 @@ const About = () => {
         
       </p>
 
-      <div className="box1 col-xxl-12 px-4 py-5 row">
+      <div className="box1 col-xxl-12 row">
         <div className=" p-5 text-center col-lg-4">
           <img
             className="m-5 bd-placeholder-img rounded-circle"

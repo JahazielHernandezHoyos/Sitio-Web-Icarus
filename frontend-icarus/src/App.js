@@ -6,14 +6,16 @@ import {
 } from 'react-router-dom';
 
 //paginas
-import Inicio from './pages/Inicio';
-import Login from './pages/Login';
+import ENInicio from './translations/en/pages/Inicio';
+import ESInicio from './translations/es/pages/Inicio';
+import Login from './translations/es/pages/Login';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Inicio />} />
+        <Route path="/" element={<ESInicio />} />
+        <Route path="/en" element={<ENInicio />} />
         <Route path="/login" element={<Login />} />
       </Routes> 
     </BrowserRouter>
