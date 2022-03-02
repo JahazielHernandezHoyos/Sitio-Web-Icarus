@@ -1,25 +1,35 @@
 import logo from "../../assets/img/Logo.png";
 import emailjs from "emailjs-com";
 import Gsap from "../../components/Gsap";
+import {useState} from "react";
 
 const Contact = () => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [tema, setTema] = useState("");
+
   Gsap();
   function sendEmail(e) {
     e.preventDefault();
+      if (name === "" || email === "" || tema === "" || message === "") {
+        alert("Por favor llena todos los campos");
+      } else {
+        emailjs
+        .sendForm(
+          "service_j5635iu",
+          "template_ks7t69l",
+          e.target,
+          "user_n7RfnKQlZUHGXNYthJREV"
+        )
+        .then((res) => {
+          console.log(res);
+          window.alert("El mensaje se ha enviado correctamente");
+        })
+        .catch((err) => console.log(err));
+      }
+    }
 
-    emailjs
-      .sendForm(
-        "service_j5635iu",
-        "template_ks7t69l",
-        e.target,
-        "user_n7RfnKQlZUHGXNYthJREV"
-      )
-      .then((res) => {
-        console.log(res);
-        window.alert("Message sent successfully");
-      })
-      .catch((err) => console.log(err));
-  }
   return (
     <>
       <div
@@ -58,6 +68,8 @@ const Contact = () => {
                   className="text-white bg-dark form-control"
                   id="floatingInput"
                   placeholder="Name"
+                  value={name}
+                  onChange={e => setName(e.target.value)}
                 />
                 <label htmlFor="floatingInput">Nombre</label>
               </div>
@@ -68,6 +80,8 @@ const Contact = () => {
                   className="text-white bg-dark form-control"
                   id="floatingInput"
                   placeholder="name@example.com"
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
                 />
                 <label htmlFor="floatingInput">Email</label>
               </div>
@@ -78,6 +92,8 @@ const Contact = () => {
                   className="text-white bg-dark form-control"
                   id="floatingInput"
                   placeholder="Business"
+                  value={tema}
+                  onChange={(e) => setTema(e.target.value)}
                 />
                 <label htmlFor="floatingInput">Tema</label>
               </div>
@@ -90,6 +106,8 @@ const Contact = () => {
                   aria-label="With textarea"
                   id="Message"
                   placeholder="Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
                 <label htmlFor="Message">Mensaje</label>
               </div>

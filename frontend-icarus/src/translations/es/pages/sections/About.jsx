@@ -1,7 +1,6 @@
 import codeimg from "../../assets/img/code.svg";
 import design from "../../assets/img/pen-tool.svg";
 import smartphone from "../../assets/img/smartphone.svg";
-import info from "../../assets/img/alert-circle.svg";
 import Gsap from "../../components/Gsap";
 
 const About = () => {
