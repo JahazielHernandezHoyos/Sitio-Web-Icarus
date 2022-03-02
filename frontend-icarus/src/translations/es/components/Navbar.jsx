@@ -3,6 +3,23 @@ import Logo from "../assets/img/Logo.png";
 import Gsap from "./Gsap";
 
 const Navbar = () => {
+
+  function idiomaEn () {
+    let idioma = "en";
+    localStorage.setItem("idioma", "en");
+    window.location.reload(false);
+    console.log(localStorage.idioma)
+  }
+  function idiomaEs () {
+    let idioma = "es";
+    localStorage.setItem("idioma", "es");
+    window.location.reload(false);
+    console.log(localStorage.idioma)
+  }
+
+  // localStorage.getItem("idioma");
+  // console.log(localStorage.idioma)
+
   Gsap();
   return (
     <>
@@ -12,9 +29,7 @@ const Navbar = () => {
           style={{ background: "#0d0d0dda" }}
         >
           <div className="container-fluid">
-            
             <a className="float-md-start navbar-brand" href="/">
-
               <img
                 src={Logo}
                 alt="Icarus Logo"
@@ -38,17 +53,26 @@ const Navbar = () => {
               <ul className="navbar-nav me-auto mb-2 mb-md-0">
                 <li className="nav-item">
                   <a className="nav-link" href="/login">
-                    Iniciar sesion
+                  {`${localStorage.idioma === "es" ? 
+                  "Iniciar sesion" : 
+                  "Login"
+                  }`}
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/#About">
-                    Sobre Nosotros
+                  {`${localStorage.idioma === "es" ? 
+                  "Sobre Nosotros" : 
+                  "About us"
+                  }`}
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/#Services">
-                    Servicios
+                  {`${localStorage.idioma === "es" ? 
+                  "Servicios" : 
+                  "Services"
+                  }`}
                   </a>
                 </li>
               </ul>
@@ -61,27 +85,42 @@ const Navbar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Language
+                  {`${localStorage.idioma === "es" ? 
+                  "Lenguaje" : 
+                  "Language"
+                  }`}
                 </button>
                 <ul
                   class="dropdown-menu dropdown-menu-dark"
                   aria-labelledby="dropdownMenuButton2"
                 >
                   <li>
-                    <a class="dropdown-item" href="/en">
+                    <button
+                      class="dropdown-item"
+                      onClick={idiomaEn}
+                    >
                       English
-                    </a>
+                    </button>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/">
-                      Spanish
-                    </a>
+                    <button
+                      class="dropdown-item"
+                      onClick={idiomaEs}
+                    >
+                      Español
+                    </button>
                   </li>
                 </ul>
                 <ul></ul>
-                <a className="btn btn-primary text-white nav-link button-text" href="/#Contact">
-                Contactanos
-              </a>
+                <a
+                  className="btn btn-primary text-white nav-link button-text"
+                  href="/#Contact"
+                >
+                  {`${localStorage.idioma === "es" ? 
+                  "Contactanos" : 
+                  "Contact"
+                  }`}
+                </a>
               </div>
             </div>
           </div>
