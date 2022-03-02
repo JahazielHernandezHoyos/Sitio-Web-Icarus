@@ -8,22 +8,22 @@ import Contact from "./sections/Contact";
 import Footer from "../components/Footer";
 import Slider from "../components/Slider";
 
-const Inicio = () => {
+const Inicio = ({language,setLanguage}) => {
   return (
     <>
       <div>
-        <Slider />
-        <Navbar />
+        <Slider language={language} />
+        <Navbar language={language} setLanguage={setLanguage} />
 
         <div className="cover-container d-flex w-100 h-100 mx-auto flex-column">
-          <About />
+          <About language={language} />
 
-          <Services />
+          <Services language={language} />
 
-          <Contact />
+          <Contact language={language} />
         </div>
 
-        <Footer />
+        <Footer language={language} />
       </div>
     </>
   );
