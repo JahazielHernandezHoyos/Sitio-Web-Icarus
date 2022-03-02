@@ -12,7 +12,10 @@ const Footer = () => {
         <img className="px-1" src={instagramIMG} href="/"/>
       </div>
       <p className="text-center lead">
-        © {year} Icarus Solutions. Todos los derechos reservados.
+        © {year} {`${localStorage.idioma === "es" ? 
+                  "Icarus Solutions. Todos los derechos reservados." : 
+                  "Icarus Solutions. All rights reserved."
+                  }`}
         {/* <a href="#">Privacy</a> ·{" "}
         <a href="#">Terms</a> */}
       </p>

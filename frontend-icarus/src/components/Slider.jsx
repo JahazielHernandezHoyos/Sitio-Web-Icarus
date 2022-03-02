@@ -18,7 +18,11 @@ const Slider = () => {
               </div>
 
               <p className="headerGsap lead text-sec text-break m-4">
-                La digitalización está cada vez más presente en la vida de la sociedad y nosotros te brindamos esta oportunidad.
+              {`${localStorage.idioma === "es" ? 
+                  "La digitalización está cada vez más presente en la vida de la sociedad y nosotros te brindamos esta oportunidad." : 
+                  "Digitization is increasingly present in the life of the entire society."
+                  }`}
+                
               </p>
               {/* <img
                       className="headerGsap text-center col-auto mx-5 bd-placeholder-img rounded-circle img-fluid"
@@ -33,7 +37,11 @@ const Slider = () => {
                     /> */}
               <p className="headerGsap lead">
                 <a href="#About" className="me-3 btn btn-primary button-text">
-                  Sobre nosotros
+                {`${localStorage.idioma === "es" ? 
+                  "Sobre nosotros" : 
+                  "About us"
+                  }`}
+                  
                 </a>
                 {/* <button href="#" className="ms-3 btn btn-secondary button-text">
                   View on Github
