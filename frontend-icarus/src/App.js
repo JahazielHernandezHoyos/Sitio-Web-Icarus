@@ -10,7 +10,7 @@ import ESInicio from './pages/Inicio';
 import Login from './pages/Login';
 
 function App() {
- const [language, setLanguage] = React.useState("es")
+ const [language, setLanguage] = React.useState(localStorage.idioma)
  const setLanguages = (languageString) => {
    setLanguage(languageString)
    localStorage.setItem("idioma", languageString)
