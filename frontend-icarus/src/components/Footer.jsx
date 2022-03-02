@@ -1,6 +1,3 @@
-import Github from '../../assets/img/github.svg';
-import Instagram from '../../assets/img/instagram.svg';
-
 const Footer = () => {
 
   //pedir año actual para el copyright
