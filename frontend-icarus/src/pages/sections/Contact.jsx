@@ -61,7 +61,7 @@ const Contact = ({language}) => {
               {
                 language === "es"
                   ? "Contactanos"
-                  : "El mensaje ha sido envidado exitosamente"
+                  : "Contact"
               }
             </h3>
             <p className="col-lg fs-4 text-center">
