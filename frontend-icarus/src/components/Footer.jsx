@@ -1,7 +1,7 @@
 import githubIMG from "../assets/img/github.svg";
 import instagramIMG from "../assets/img/instagram.svg";
 
-const Footer = () => {
+const Footer = ({language}) => {
   //pedir año actual para el copyright
   const year = new Date().getFullYear();
 
@@ -12,10 +12,7 @@ const Footer = () => {
         <a href="https://www.instagram.com/"><img className="px-1" src={instagramIMG} alt="Instragram"/></a>
       </div>
       <p className="text-center lead">
-        © {year} {`${localStorage.idioma === "es" ? 
-                  "Icarus Solutions. Todos los derechos reservados." : 
-                  "Icarus Solutions. All rights reserved."
-                  }`}
+        © {year} {language === "es"? "Todos los derechos reservados." : "All rights reserved."}
         {/* <a href="#">Privacy</a> ·{" "}
         <a href="#">Terms</a> */}
       </p>
