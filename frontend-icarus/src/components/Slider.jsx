@@ -1,4 +1,4 @@
-const Slider = () => {
+const Slider = ({language}) => {
   return (
     <section className="banner text-center">
       <div className="banner-content">
@@ -16,10 +16,8 @@ const Slider = () => {
               </div>
 
               <p className="headerGsap lead text-sec text-break m-4">
-              {`${localStorage.idioma === "es" ? 
-                  "La digitalización está cada vez más presente en la vida de la sociedad y nosotros te brindamos esta oportunidad." : 
-                  "Digitization is increasingly present in the life of the entire society."
-                  }`}
+              {language === "es"? "La digitalización está cada vez más presente en la vida de la sociedad y nosotros te brindamos esta oportunidad." 
+                                  : "Digitization is increasingly present in the life of the entire society."}
                 
               </p>
               {/* <img
@@ -35,10 +33,8 @@ const Slider = () => {
                     /> */}
               <p className="headerGsap lead">
                 <a href="#About" className="me-3 btn btn-primary button-text">
-                {`${localStorage.idioma === "es" ? 
-                  "Sobre nosotros" : 
-                  "About us"
-                  }`}
+                {language === "es"? "Sobre nosotros" 
+                                  : "About us"}
                   
                 </a>
                 {/* <button href="#" className="ms-3 btn btn-secondary button-text">
