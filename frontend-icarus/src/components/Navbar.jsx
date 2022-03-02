@@ -45,7 +45,7 @@ const Navbar = ({language,setLanguage}) => {
                   {language === "es" ? 
                   "Iniciar sesion" : 
                   "Login"
-                  }}
+                  }
                   </a>
                 </li>
                 <li className="nav-item ms-3">
@@ -53,7 +53,7 @@ const Navbar = ({language,setLanguage}) => {
                   {language === "es" ? 
                   "Sobre Nosotros" : 
                   "About us"
-                  }}
+                  }
                   </a>
                 </li>
                 <li className="nav-item ms-3">
@@ -61,7 +61,7 @@ const Navbar = ({language,setLanguage}) => {
                   {language === "es" ? 
                   "Servicios" : 
                   "Services"
-                  }}
+                  }
                   </a>
                 </li>
               </ul>
@@ -77,7 +77,7 @@ const Navbar = ({language,setLanguage}) => {
                   {language === "es" ? 
                   "Lenguaje" : 
                   "Language"
-                  }}
+                  }
                 </button>
                 <ul
                   class="dropdown-menu dropdown-menu-dark"
@@ -86,16 +86,14 @@ const Navbar = ({language,setLanguage}) => {
                   <li>
                     <button
                       class="dropdown-item"
-                      onClick={setLanguage("en")}>
+                      onClick={()=>setLanguage("en")}>
                       {language === "es"? "English" : "Inglés"}
                     </button>
                   </li>
                   <li>
                     <button
-                      class="dropdown-item"
-                      onClick={setLanguage("es")
-                    >
-                      {language === "es"? "Spanish" : "Español"}
+                      class="dropdown-item" onClick={()=>setLanguage("es")}>
+                      {language === "es" ? "Spanish" : "Español"}
                     </button>
                   </li>
                 </ul>
@@ -107,7 +105,7 @@ const Navbar = ({language,setLanguage}) => {
                   {language.idioma === "es" ? 
                   "Contactanos" : 
                   "Contact"
-                  }}
+                  }
                 </a>
               </div>
             </div>

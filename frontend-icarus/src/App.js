@@ -6,22 +6,22 @@ import {
 } from 'react-router-dom';
 
 //paginas
-import ENInicio from './translations/en/pages/Inicio';
-import ESInicio from './translations/es/pages/Inicio';
-import Login from './translations/es/pages/Login';
+import ESInicio from './pages/Inicio';
+import Login from './pages/Login';
 
 function App() {
  const [language, setLanguage] = React.useState("es")
- const setLanguage = (languageString) => {
+ const setLanguages = (languageString) => {
    setLanguage(languageString)
    localStorage.setItem("idioma", languageString)
+   console.log("Idioma:", languageString)
  }
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ESInicio language={language} language={language} setLanguage={setLanguage}/>}  />
+        <Route path="/" element={<ESInicio language={language} setLanguage={setLanguages}/>}  />
         {/* <Route path="/en" element={<ENInicio />} /> */}
-        <Route path="/login" element={<Login language={language} setLanguage={setLanguage} />} />
+        <Route path="/login" element={<Login language={language} setLanguage={setLanguages} />} />
       </Routes> 
     </BrowserRouter>
   );

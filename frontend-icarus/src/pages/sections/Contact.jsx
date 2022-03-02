@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import Gsap from "../../components/Gsap";
 import { useState } from "react";
 
-const Contact = () => {
+const Contact = ({language}) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -32,16 +32,15 @@ const Contact = () => {
           console.log(res);
           alert(
             `${
-              localStorage.idioma === "es"
+              language === "es"
                 ? "El mensaje se ha enviado correctamente"
-                : "El mensaje ha sido envidado exitosamente"
+                : "The message was sent succesfully"
             }`
           );
         })
         .catch((err) =>
           alert(
-            `${
-              localStorage.idioma === "es"
+            `${language === "es"
                 ? "Hubo un error al enviar el mensaje"
                 : "There was an error sending the message"
             }`
@@ -59,18 +58,18 @@ const Contact = () => {
         <div className="row align-items-center g-lg-5 py-5">
           <div className="col-lg-5 text-center text-lg-start">
             <h3 className="display-4 text-center fw-bold lh-1 mb-5">
-              {`${
-                localStorage.idioma === "es"
+              {
+                language === "es"
                   ? "Contactanos"
                   : "El mensaje ha sido envidado exitosamente"
-              }`}
+              }
             </h3>
             <p className="col-lg fs-4 text-center">
-              {`${
-                localStorage.idioma === "es"
+              {
+                language === "es"
                   ? "Contáctenos para su consulta y solicite su presupuesto sin compromisos"
                   : "Contact us for your consultation and request your budget without commitments"
-              }`}
+              }
             </p>
             <img
               className="mx-auto m-3 d-block"
@@ -99,7 +98,7 @@ const Contact = () => {
                   onChange={(e) => setName(e.target.value)}
                 />
                 <label htmlFor="floatingInput">
-                  {`${localStorage.idioma === "es" ? "Nombre" : "Name"}`}
+                  {language === "es" ? "Nombre" : "Name"}
                 </label>
               </div>
               <div className="form-floating mb-3">
@@ -113,7 +112,7 @@ const Contact = () => {
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 <label htmlFor="floatingInput">
-                  {`${localStorage.idioma === "es" ? "Correo" : "Email"}`}
+                  {language === "es" ? "Correo" : "Email"}
                 </label>
               </div>
               <div className="form-floating mb-3">
@@ -127,7 +126,7 @@ const Contact = () => {
                   onChange={(e) => setTema(e.target.value)}
                 />
                 <label htmlFor="floatingInput">
-                  {`${localStorage.idioma === "es" ? "Tema" : "Business"}`}
+                  {language === "es" ? "Tema" : "Business"}
                 </label>
               </div>
               <div className="form-floating mb-3">
@@ -143,7 +142,7 @@ const Contact = () => {
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
                 <label htmlFor="Message">
-                  {`${localStorage.idioma === "es" ? "Mensaje" : "Message"}`}
+                  {language === "es" ? "Mensaje" : "Message"}
                 </label>
               </div>
               <button
@@ -151,7 +150,7 @@ const Contact = () => {
                 type="submit"
                 value="Send"
               >
-                {`${localStorage.idioma === "es" ? "Enviar" : "Submit"}`}
+                {language === "es" ? "Enviar" : "Submit"}
               </button>
               <a
                 className="lead w-100 mt-2 btn btn-lg btn-success"
