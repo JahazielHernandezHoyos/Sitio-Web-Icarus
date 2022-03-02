@@ -39,7 +39,6 @@ a {
   margin-bottom: 1rem;
   padding: 0.6rem 1.3rem;
    */
-}
 
 .bg-dark{
   background-color: #0D0D0D;
@@ -74,7 +73,8 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #0d0d0d00; /* color of the tracking area */
+  background: #0000007c; /* color of the tracking area */
+  border-radius: 0rem;
 }
 
 body::-webkit-scrollbar-thumb {

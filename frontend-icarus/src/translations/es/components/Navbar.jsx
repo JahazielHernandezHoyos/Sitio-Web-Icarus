@@ -55,7 +55,7 @@ const Navbar = () => {
 
               <div class="navbar-nav mx-2 dropdown">
                 <button
-                  class="btn btn-secondary dropdown-toggle"
+                  class="btn btn-outline-light dropdown-toggle"
                   type="button"
                   id="dropdownMenuButton2"
                   data-bs-toggle="dropdown"
