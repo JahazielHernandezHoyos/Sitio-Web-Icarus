@@ -50,8 +50,8 @@ const Navbar = () => {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarCollapse">
-              <ul className="navbar-nav me-auto mb-2 mb-md-0">
-                <li className="nav-item">
+              <ul className="navbar-nav me-auto mb-md-0">
+                <li className="nav-item ">
                   <a className="nav-link" href="/login">
                   {`${localStorage.idioma === "es" ? 
                   "Iniciar sesion" : 
@@ -59,7 +59,7 @@ const Navbar = () => {
                   }`}
                   </a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item ms-3">
                   <a className="nav-link" href="/#About">
                   {`${localStorage.idioma === "es" ? 
                   "Sobre Nosotros" : 
@@ -67,7 +67,7 @@ const Navbar = () => {
                   }`}
                   </a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item ms-3">
                   <a className="nav-link" href="/#Services">
                   {`${localStorage.idioma === "es" ? 
                   "Servicios" : 
