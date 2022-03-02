@@ -14,6 +14,7 @@ function App() {
  const [language, setLanguage] = React.useState("es")
  const setLanguage = (languageString) => {
    setLanguage(languageString)
+   localStorage.setItem("idioma", languageString)
  }
   return (
     <BrowserRouter>
