@@ -2,18 +2,9 @@ import React from "react";
 import Logo from "../assets/img/Logo.png";
 import Gsap from "./Gsap";
 
-const Navbar = () => {
+const Navbar = ({language,setLanguage}) => {
 
-  function idiomaEn () {
-    localStorage.setItem("idioma", "en");
-    window.location.reload(false);
-    console.log(localStorage.idioma)
-  }
-  function idiomaEs () {
-    localStorage.setItem("idioma", "es");
-    window.location.reload(false);
-    console.log(localStorage.idioma)
-  }
+  
 
   // localStorage.getItem("idioma");
   // console.log(localStorage.idioma)
@@ -51,26 +42,26 @@ const Navbar = () => {
               <ul className="navbar-nav me-auto mb-md-0">
                 <li className="nav-item ">
                   <a className="nav-link" href="/login">
-                  {`${localStorage.idioma === "es" ? 
+                  {language === "es" ? 
                   "Iniciar sesion" : 
                   "Login"
-                  }`}
+                  }}
                   </a>
                 </li>
                 <li className="nav-item ms-3">
                   <a className="nav-link" href="/#About">
-                  {`${localStorage.idioma === "es" ? 
+                  {language === "es" ? 
                   "Sobre Nosotros" : 
                   "About us"
-                  }`}
+                  }}
                   </a>
                 </li>
                 <li className="nav-item ms-3">
                   <a className="nav-link" href="/#Services">
-                  {`${localStorage.idioma === "es" ? 
+                  {language === "es" ? 
                   "Servicios" : 
                   "Services"
-                  }`}
+                  }}
                   </a>
                 </li>
               </ul>
@@ -83,10 +74,10 @@ const Navbar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  {`${localStorage.idioma === "es" ? 
+                  {language === "es" ? 
                   "Lenguaje" : 
                   "Language"
-                  }`}
+                  }}
                 </button>
                 <ul
                   class="dropdown-menu dropdown-menu-dark"
@@ -95,17 +86,16 @@ const Navbar = () => {
                   <li>
                     <button
                       class="dropdown-item"
-                      onClick={idiomaEn}
-                    >
-                      English
+                      onClick={setLanguage("en")}>
+                      {language === "es"? "English" : "Inglés"}
                     </button>
                   </li>
                   <li>
                     <button
                       class="dropdown-item"
-                      onClick={idiomaEs}
+                      onClick={setLanguage("es")
                     >
-                      Español
+                      {language === "es"? "Spanish" : "Español"}
                     </button>
                   </li>
                 </ul>
@@ -114,10 +104,10 @@ const Navbar = () => {
                   className="btn btn-primary text-white nav-link button-text"
                   href="/#Contact"
                 >
-                  {`${localStorage.idioma === "es" ? 
+                  {language.idioma === "es" ? 
                   "Contactanos" : 
                   "Contact"
-                  }`}
+                  }}
                 </a>
               </div>
             </div>
