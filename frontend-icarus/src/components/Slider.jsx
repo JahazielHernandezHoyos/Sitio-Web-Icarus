@@ -1,5 +1,3 @@
-import users from "../assets/img/users.svg";
-
 const Slider = () => {
   return (
     <section className="banner text-center">

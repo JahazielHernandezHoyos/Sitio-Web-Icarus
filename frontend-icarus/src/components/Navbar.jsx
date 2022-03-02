@@ -5,13 +5,11 @@ import Gsap from "./Gsap";
 const Navbar = () => {
 
   function idiomaEn () {
-    let idioma = "en";
     localStorage.setItem("idioma", "en");
     window.location.reload(false);
     console.log(localStorage.idioma)
   }
   function idiomaEs () {
-    let idioma = "es";
     localStorage.setItem("idioma", "es");
     window.location.reload(false);
     console.log(localStorage.idioma)
