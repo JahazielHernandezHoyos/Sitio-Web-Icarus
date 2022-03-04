@@ -101,7 +101,7 @@ body::-webkit-scrollbar-thumb {
   
   position: relative;
   width: 100%;
-  height: calc(100vh - 89px);
+  height: calc(100vh);
   background-color: #ffffff;
   background-size: cover;
   background-position: center;
