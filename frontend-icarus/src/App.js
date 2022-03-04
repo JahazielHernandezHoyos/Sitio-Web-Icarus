@@ -11,7 +11,12 @@ import Login from './pages/Login';
 
 function App() {
  const [language, setLanguage] = React.useState(localStorage.idioma)
-   
+ 
+ if (!language) {
+  localStorage.idioma = ''
+  setLanguage('es')
+ }
+  
  console.log(localStorage.idioma)
  const setLanguages = (languageString) => {
    setLanguage(languageString)
