@@ -2,7 +2,7 @@ const Slider = ({language}) => {
   return (
     <section className="banner text-center">
       <div className="banner-content">
-        <div className="row py-lg-5 ">
+        <div className="">
           <div className="containerGsap mx-auto">
             <div className="">
               <div className="headerGsap text-center mb-4">

@@ -1,4 +1,4 @@
-import { gsap, Power3, Expo } from "gsap";
+import { gsap, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
 

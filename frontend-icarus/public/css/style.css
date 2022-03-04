@@ -63,6 +63,7 @@ a {
 }
 
 body {
+  /* hacer el ancho exacto de la pagina responsive */
   overflow-x: hidden;
   scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0);
   border-radius: 0.3rem;
@@ -96,8 +97,10 @@ body::-webkit-scrollbar-thumb {
    */
 
 .banner {
+  /* poner limite al ancho responsive*/
+  
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 89px);
   background-color: #ffffff;
   background-size: cover;
