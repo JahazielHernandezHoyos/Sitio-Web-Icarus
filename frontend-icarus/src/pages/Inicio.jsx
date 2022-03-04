@@ -16,13 +16,16 @@ const Inicio = ({language,setLanguage}) => {
         <Navbar language={language} setLanguage={setLanguage} />
 
         <div className="cover-container d-flex w-100 h-100 mx-auto flex-column">
+
           <About language={language} />
+          {/* linea con color amarillo divisor */}
+          <hr style={{width: "50%", margin: "auto"}}/>
 
           <Services language={language} />
-
+          <hr style={{width: "50%", margin: "auto"}}/>
           <Contact language={language} />
         </div>
-
+        <hr style={{width: "50%", margin: "auto"}}/>
         <Footer language={language} />
       </div>
     </>

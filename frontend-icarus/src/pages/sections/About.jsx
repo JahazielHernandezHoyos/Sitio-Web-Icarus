@@ -10,13 +10,12 @@ const About = ({language}) => {
       <h1 id="About" className="text-center mt-5 py-5">
         {language === "es" ? "Sobre nosotros" : "About us"}
       </h1>
-      <p className="p-5 text-center">
+      <p className="px-5 text-center">
         {language === "es"
             ? "Somos una empresa de desarrollo de software que busca entregarte un espacio para tu negocio en la Web a buen precio y excelente calidad ofrecimiento..."
             : "We are a software development company that seeks to deliver and give you a space for your online business at a good price and excellent quality offering..."
         }
       </p>
-
       <div className="box1 col-xxl-12 row">
         <div className=" p-5 text-center col-lg-4">
           <img
