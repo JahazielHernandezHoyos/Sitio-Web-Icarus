@@ -98,7 +98,7 @@ const Navbar = ({language,setLanguage}) => {
                   </li>
                 </ul>
                 <ul></ul>
-                <a
+                <button
                   className="btn btn-primary text-white nav-link button-text"
                   href="/#Contact"
                 >
@@ -106,7 +106,7 @@ const Navbar = ({language,setLanguage}) => {
                   "Contactanos" : 
                   "Contact"
                   }
-                </a>
+                </button>
               </div>
             </div>
           </div>
