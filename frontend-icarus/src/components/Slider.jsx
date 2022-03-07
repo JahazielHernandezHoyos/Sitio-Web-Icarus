@@ -16,8 +16,8 @@ const Slider = ({language}) => {
               </div>
 
               <p className="headerGsap lead text-sec text-break m-4">
-              {language === "es"? "La digitalización está cada vez más presente en la vida de la sociedad y nosotros te brindamos esta oportunidad." 
-                                  : "Digitization is increasingly present in the life of the entire society."}
+              {language === "es"? "La digitalización es un importante paso para las empresas. Deja que te ayudemos con ello." 
+                                  : "Digitization is an important step for companies. Let us help you with it."}
                 
               </p>
               {/* <img

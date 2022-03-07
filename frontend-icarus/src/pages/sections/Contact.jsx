@@ -67,8 +67,8 @@ const Contact = ({language}) => {
             <p className="col-lg fs-4 text-center">
               {
                 language === "es"
-                  ? "Contáctenos para su consulta y solicite su presupuesto sin compromisos"
-                  : "Contact us for your consultation and request your budget without commitments"
+                  ? "¿Tienes alguna duda? Contacta con nosotros para realizar cualquier consulta y solicita un presupuesto sin ningún compromiso "
+                  : "Do you have any doubt? Contact us for any questions and request a quote without any commitment"
               }
             </p>
             <img

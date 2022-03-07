@@ -27,14 +27,14 @@ const Services = ({language}) => {
           <div className="servicio1 containerGsap col-lg-6">
             <h3 className="mb-3">
               {language === "es"
-                  ? "Desarrollo Web"
+                  ? "Sitios Web"
                   : "Web development"
               }
             </h3>
             <p className="lead py-5">
               {language === "es"
-                  ? "Desarrollamos desde pequeñas y sencillas páginas hasta grandes y complejos ecommerce. Incluye host. Si no tienes página web, tu competencia se lleva a tus clientes."
-                  : "From small and simple pages to large and complex ecommerce. Includes host. If you do not have a website, your competition takes your customers."
+                  ? "Desarrollamos páginas web personalizadas, con garantía de funcionamiento y calidad, sin importar el tamaño (desde sencillas páginas de presentación, hasta grandes estructuras, como las de ecommerce). El alojamiento está incluído con nosotros, además del dominio y todos los elementos necesarios para causar una buena impresión (certificado SSL, protección Anti-DDOS)"
+                  : "We develop personalized web pages, with performance and quality guarantees, regardless of size (from simple presentation pages, to large structures, such as e-commerce). Hosting is included with us, in addition to the domain and all the necessary elements to make a good impression (SSL certificate, Anti-DDOS protection)"
               }
             </p>
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
@@ -72,8 +72,8 @@ const Services = ({language}) => {
             </h3>
             <p className="lead py-5">
               {language === "es"
-                  ? "Es el que se instala en el ordenador o sistema de almacenamiento el cual se puede ejecutar sin internet en su sistema operativo en caso de que necesites que tu sistema siga funcionando sin internet o que cuando no tengas internet el sistema siga operativo."
-                  : "It is the one that is installed on the computer or storage system which can be executed without internet in its operating system in case you need your system to continue working without internet or that when you do not have internet the system continues to operate."
+                  ? "Creamos aplicaciones para ser usadas a través del ordenador. Sus usos pueden depender de las necesidades (aplicación de contabilidad, registros de transacciones, organización de proyectos...). Pueden funcionar con o sin Internet, lo que permite una mayor versatilidad en sus usos prácticos."
+                  : "We create applications to be used through the computer. Its uses can depend on the needs (accounting application, transaction records, project organization...). They can work with or without the Internet, which allows greater versatility in their practical uses."
               }
             </p>
             <div className=" d-grid gap-2 d-md-flex justify-content-md-end">
